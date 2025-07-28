@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Personal Details Marksheet</title>
+</head>
+
+<body>
+    <center>
+        <form>
+            <table border="1px" width="50%" cellpadding="10px">
+
+                <thead>
+                    <tr>
+                        <th colspan="4">
+                            <font color="red" size="6">Personal Details</font>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <th colspan="2">Full Name</th>
+                        <td colspan="2">
+                            <label for="user_name"></label>
+                            <input type="text" id="user_name" placeholder="eg. Rahul Kumar Singh" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Create Password</th>
+                        <td colspan="2">
+                            <label for="user_password"></label>
+                            <input type="password" id="user_password" required placeholder="eg. *******">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">DOB</th>
+                        <td colspan="2">
+                            <label for="user_dob"></label>
+                            <input type="date" id="user_dob" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Mobile No</th>
+                        <td colspan="2">
+                            <label for="user_mobile_no"></label>
+                            <input type="tel" id="user_mobile_no" required pattern="[0-9]{10}"
+                                placeholder="+91 XXXXXXXXXX">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Email id</th>
+                        <td colspan="2">
+                            <label for="user_email"></label>
+                            <input type="email" id="user_email" placeholder="eg. info@gmail.com">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Gender</th>
+                        <td colspan="2">
+                            <label for="female"></label>
+                            <input type="radio" id="female" value="Female" name="gender" required>Female
+
+                            <label for="male"></label>
+                            <input type="radio" id="male" value="Male" name="gender" required>Male
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="4">
+                            <center>
+                                <fieldset>
+                                    <legend>Marital Status🫣</legend>
+                                    <label for="m1"></label>
+                                    <input type="radio" id="m1" value="married" name="marital" required>Married
+
+                                    <label for="s1"></label>
+                                    <input type="radio" id="s1" value="single" name="marital" required>Single
+
+                                    <label for="r1"></label>
+                                    <input type="radio" id="r1" value="relationship" name="marital"
+                                        required>Relationship
+                                </fieldset>
+                            </center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Hobbies</th>
+                        <td colspan="2">
+                            <label for="learning_skill">
+                                <input type="checkbox" id="learning_skill" name="hobbies" value="Learning Skill">
+                                Learning Skill
+                            </label>
+
+                            <label for="music">
+                                <input type="checkbox" id="music" name="hobbies" value="Music">
+                                Music
+                            </label>
+
+                            <label for="cricket">
+                                <input type="checkbox" id="cricket" name="hobbies" value="Cricket">
+                                Cricket
+                            </label>
+
+                            <label for="instagram">
+                                <input type="checkbox" id="instagram" name="hobbies" value="Instagram">
+                                Instagram
+                            </label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Upload Photo</th>
+                        <td colspan="2">
+                            <label for="user_photo"></label>
+                            <input type="file" id="user_photo">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">District</th>
+                        <td colspan="2">
+                            <label for="user_district"></label>
+                            <select id="user_district" required>
+                                <option selected disabled>Select District</option>
+                                <option value="Purnea">Purnea</option>
+                                <option value="Araria">Araria</option>
+                                <option value="Rohtas">Rohtas</option>
+                                <option value="Sivan">Sivan</option>
+                                <option value="Munger">Munger</option>
+                                <option value="Bhagalpur">Bhagalpur</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">State</th>
+                        <td colspan="2">
+                            <label for="user_state"></label>
+                            <select id="user_state" required>
+                                <option selected disabled>Select State</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Asam">Asam</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Pin Code</th>
+                        <td colspan="2">
+                            <label for="user_piccode"></label>
+                            <input type="tel" id="user_piccode" pattern="[0-9]{6}">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="4">
+                            <font color="blue" size="5"><b>Marks Information</b></font>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <th>Subject</th>
+                        <th>Total Marks</th>
+                        <th>Pass Marks</th>
+                        <th>Obtain Marks</th>
+                    </tr>
+
+                    <tr>
+                        <th>Hindi</th>
+                        <th>100</th>
+                        <th>30</th>
+                        <td>
+                            <label for="hindi_marks"></label>
+                            <input type="tel" id="hindi_marks" pattern="[0-9]{3}">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>English</th>
+                        <th>100</th>
+                        <th>30</th>
+                        <td>
+                            <label for="english_marks"></label>
+                            <input type="tel" id="english_marks" pattern="[0-9]{3}">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Maths</th>
+                        <th>100</th>
+                        <th>30</th>
+                        <td>
+                            <label for="maths_marks"></label>
+                            <input type="tel" id="maths_marks" pattern="[0-9]{3}">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Science</th>
+                        <th>100</th>
+                        <th>30</th>
+                        <td>
+                            <label for="science_marks"></label>
+                            <input type="tel" id="science_marks" pattern="[0-9]{3}">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>SST</th>
+                        <th>100</th>
+                        <th>30</th>
+                        <td>
+                            <label for="sst_marks"></label>
+                            <input type="tel" id="sst_marks" pattern="[0-9]{3}">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="4">
+                            <font size="5" color="green">Result Information</font>
+                        </th>
+                    </tr>
+
+                    <tr align="center">
+                        <th colspan="2">Total Marks</th>
+                        <td colspan="2">
+                            <font size="4"><b>450</b></font>
+                        </td>
+                    </tr>
+
+                    <tr align="center">
+                        <th colspan="2">Division</th>
+                        <td colspan="2">
+                            <font size="4"><b>1st</b></font>
+                        </td>
+                    </tr>
+
+                    <tr align="center">
+                        <th colspan="2">Percentage</th>
+                        <td colspan="2">
+                            <font size="4"><b>90%</b></font>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <br>
+
+            <button type="submit">Submit Marks</button>
+            <button type="reset">Clear Details</button>
+        </form>
+    </center>
+</body>
+
+</html>

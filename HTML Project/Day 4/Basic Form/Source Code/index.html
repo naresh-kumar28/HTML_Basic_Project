@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <center>
+        <form>
+
+            <label for="user_name">Full Name:</label>
+            <input type="text" id="user_name" placeholder="e.g Naresh Kumar Sah">
+            <br> <br>
+
+            <label for="user_password">Password:</label>
+            <input type="password" id="user_password" placeholder="e.g ***********" min="6">
+            <br> <br>
+
+            <label for="user_dob">D.O.B:</label>
+            <input type="date" id="user_dob" required>
+            <br> <br>
+
+            <label for="user_mobileno">Mobile-No:</label>
+            <input type="tel" id="user_mobileno" placeholder="e.g +91-7070509185" required min="10">
+            <br> <br>
+
+            <label for="user_email">Email-id:</label>
+            <input type="email" id="user_email" placeholder="e.g info@gmail.com" required>
+            <br> <br>
+
+            <fieldset style="width: 200px;">
+                <legend>Gender</legend>
+
+                <label for="f1">Female</label>
+                <input type="radio" id="f1" value="female" required name="gender">
+
+                <label for="m1">Male</label>
+                <input type="radio" id="m1" value="male" required name="gender">
+
+            </fieldset>
+            <br> <br>
+
+            <label for="user_photo">Upload Photo:</label>
+            <input type="file" id="user_photo" required>
+            <br> <br>
+
+            <label for="user_district">District:</label>
+            <select id="user_district" required>
+                <option selected disabled>Select District</option>
+                <option value="Purnea">Purnea</option>
+                <option value="Araria">Araria</option>
+                <option value="Rohtas">Rohtas</option>
+                <option value="Sivan">Sivan</option>
+                <option value="Munger">Munger</option>
+                <option value="Bhagalpur">Bhagalpur</option>
+            </select>
+
+            <br> <br>
+
+            <label for="user_State">State:</label>
+            <select id="user_State" required>
+                <option selected disabled>Select State</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Asam">Asam</option>
+            </select>
+
+            <br> <br>
+
+            <label for="user_website_url">Website Url: </label>
+            <input type="url" id="user_website_url" required placeholder="https://www.comestro.com">
+            <br> <br>
+
+            <label for="user_time">Select Time:</label>
+            <input type="time" id="user_time">
+            <br> <br>
+
+            <label for="user_color">Select Colour:</label>
+            <input type="color" id="user_color">
+            <br> <br>
+
+            <label for="user_about_us">About us:</label> <br>
+            <textarea id="user_about_us" rows="10" cols="40" maxlength="50"
+                placeholder="Apne Bare Me Kuch Likho🫠"></textarea>
+            <br> <br>
+
+            <button type="submit">Submit Details</button>
+            <button type="reset">Reset Details</button>
+        </form>
+    </center>
+</body>
+
+</html>
